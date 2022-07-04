@@ -30,7 +30,7 @@ local function showFixFoldersDialog()
 
 	LrFunctionContext.callWithContext( "showFixFoldersDialog", function( context )
 
-	    local f = LrView.osFactory()
+		local f = LrView.osFactory()
 		local as = activeCatalog:getActiveSources()
 
 		if #as ~= 1 or as[1]:type() ~= "LrFolder" then
